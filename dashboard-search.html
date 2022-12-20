@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avventura Auto</title>
+    <link rel="stylesheet" href="dashboard-search-styles.css">
+    <link rel="shortcut icon" href="img/aalogo.png">
+</head>
+<body>
+    <!--navbar-->
+    <div class="navbar-container">
+        <div class="navbar-left">
+            <img src="img/aalogo.png" alt="Avventura Logo" class="logo">
+            <ul>
+                <li class="navbar">
+                    <a href="">
+                        <img src="icons/home.png" alt="icon for home" class="nav-icon">
+                    </a>
+                </li>
+                <li class="navbar">
+                    <a href="">
+                        <img src="icons/people.png" alt="icon for people" class="nav-icon">
+                    </a>
+                </li>
+                <li class="navbar">
+                    <a href="">
+                        <img src="icons/city.png" alt="icon for city" class="nav-icon">
+                    </a>
+                </li>
+                <li class="navbar bottom" id="hide-nav">
+                    <img src="icons/next.png" alt="icon for nav-show" class="nav-icon" id="nav-show-icon">
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-extension" id="slide">
+            <div class="nav-extension-toggler" id="nav-toggler"></div>
+            <ul class="navbar-extension">
+                <li class="navbar navbar-extension"><a href="#"><p class="nav-links">HOME</p></a></li>
+                <li class="navbar navbar-extension"><a href="#"><p class="nav-links">CUSTOMER</p></a></li>
+                <li class="navbar navbar-extension"><a href="#"><p class="nav-links">ABOUT US</p></a></li>
+            </ul>
+            <hr class="sep">
+            <img src="img/aalogo.png" alt="Avventura Logo" class="logo2">
+        </div>
+        
+    </div>
+
+    <!--MAIN PAGE-->
+    <div class="main-content" >
+        <div class="topbar">
+            <h1 class="pagename">Avventura Auto</h1>
+            <div class="username-container">
+                <p class="username">Username</p>
+                <img class="user-icon" src="img/person-placeholder.png" alt="profile picture">
+            </div>
+        </div>
+
+        <div class="searchbox-container">
+            <h1 class="title">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
+            <div class="searchbar-container">
+                <input class="searchbar" type="text" placeholder="Search here..">
+            </div>
+
+            <div class="searchbox-option-labels-container">
+                <p class="searchbox-option-labels">Pick-Up Date</p>
+                <p class="searchbox-option-labels">Pick-Up Time</p>
+                <p class="searchbox-option-labels">Drop-Off Date</p>
+                <p class="searchbox-option-labels">Drop-Off Time</p>
+            </div>
+            <div class="searchbox-options">
+                <form action="">
+                    <input type="date" id="pickup-date" name="pickup-date" class="searchbox-dropdown searchbox-styles">
+
+                    <select name="pickup-time" class="searchbox-dropdown searchbox-styles" id="pickup-time">
+                        <option value="">--select time--</option>
+                        <option value="1am">1:00AM</option>
+                        <option value="130am">1:30AM</option>
+                        <option value="2am">2:00AM</option>
+                        <option value="230am">2:30AM</option>
+                        <option value="3am">3:00AM</option>
+                        <option value="330am">3:30AM</option>
+                        <option value="4am">4:00AM</option>
+                        <option value="430am">4:30AM</option>
+                        <option value="5am">5:00AM</option>
+                        <option value="530am">5:30AM</option>
+                        <option value="6am">6:00AM</option>
+                        <option value="630am">6:30AM</option>
+                        <option value="7am">7:00AM</option>
+                        <option value="730am">7:30AM</option>
+                        <option value="8am">8:00AM</option>
+                        <option value="830am">8:30AM</option>
+                    </select>
+
+                    <input type="date" id="dropoff-date" name="dropoff-date" class="searchbox-dropdown searchbox-styles">
+
+                    <select name="dropoff-time" class="searchbox-dropdown searchbox-styles" id="dropoff-time">
+                        <option value="">--select time--</option>
+                        <option value="1am">1:00AM</option>
+                        <option value="130am">1:30AM</option>
+                        <option value="2am">2:00AM</option>
+                        <option value="230am">2:30AM</option>
+                        <option value="3am">3:00AM</option>
+                        <option value="330am">3:30AM</option>
+                        <option value="4am">4:00AM</option>
+                        <option value="430am">4:30AM</option>
+                        <option value="5am">5:00AM</option>
+                        <option value="530am">5:30AM</option>
+                        <option value="6am">6:00AM</option>
+                        <option value="630am">6:30AM</option>
+                        <option value="7am">7:00AM</option>
+                        <option value="730am">7:30AM</option>
+                        <option value="8am">8:00AM</option>
+                        <option value="830am">8:30AM</option>
+                    </select>
+                        
+                    <input type="submit" value="SEARCH" class="search-button searchbox-styles">
+                </form>
+            </div>
+        </div>
+
+        <div class="dashboard-contents-container">
+            <div class="search-contents">
+                <div class="dashboard-content">
+                    <img src="img/cars/2017-wigo.jpg" alt="" class="dashboard-images">
+                    <div class="search-details">
+                        <p class="search-details details-carname">Toyota Wigo</p>
+                        <p class="search-details">4.9 out of 5</p>
+
+                        <label for="details-price">Price</label>
+                        <p class="details-price">25,000</p>
+                    </div>
+                </div>
+            
+                <div class="dashboard-content">
+                    <img src="img/cars/2017-wigo.jpg" alt="" class="dashboard-images">
+                    <div class="search-details">
+                        <p class="details-carname">Toyota Wigo</p>
+                        <p>4.9 out of 5</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-search-filter">
+                <h1 class="search-labels">Search Filters</h1>
+                <p class="search-labels">Price:</p>
+                <select name="sortby-price" class="searchbox-dropdown searchbox-styles" id="sortby-price">
+                    <option value="">Highest Rating</option>
+                    <option value="">Price (Highest-Lowest)</option>
+                    <option value="">Price (Lowest-Highest)</option>
+                </select>
+                <p class="search-labels">Car type:</p>
+                <select name="sortby-cartype" class="searchbox-dropdown searchbox-styles" id="sortby-cartype">
+                    <option value="">Sedan</option>
+                    <option value="">Hatchback</option>
+                    <option value="">SUV</option>
+                    <option value="">Hardtop</option>
+                    <option value="">Convertible</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="car-logos-container">
+            <img src="img/carlogos/toyota.png" alt="" class="car-logos">
+            <img src="img/carlogos/mitsubishi.png" alt="" class="car-logos">
+            <img src="img/carlogos/ford.png" alt="" class="car-logos">
+            <img src="img/carlogos/tesla.png" alt="" class="car-logos">
+            <img src="img/carlogos/jeep.png" alt="" class="car-logos">
+        </div>
+
+        <div class="allrights">
+            <p>&#169; Avventura Auto 2022</p>
+        </div>
+    </div>
+<script src="scripts/dashboard-navbar-script.js"></script>
+</body>
+</html>

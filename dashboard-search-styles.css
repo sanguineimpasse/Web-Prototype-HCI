@@ -26,14 +26,14 @@ div.car-image-container{
 
 img.dashboard-images-car{
     margin-right: 2vw;
-    height: 16vw;
+    height: 13vw;
     border: 2px solid black;
 }
 
 div.search-details{
     display: block;
     float: right;
-    margin-right: 10vw;
+    margin-right: 5vw;
     overflow: hidden;
 } 
 
@@ -54,13 +54,18 @@ p.details-price{
     padding: 2vw;
     display: block;
     margin-bottom: 1vw;
-    width: 50vw;
-    height: 18vw;
+    width: 40vw;
+    height: 13vw;
     border-radius: 16px;
 }
 
 .dashboard-content-search:hover{
     background-color: var(--grey1lighter);
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 p.details-carname{

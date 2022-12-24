@@ -37,19 +37,20 @@
 
                         <div class="form-control">
 							<input type="date" id="bday" name="bday" required />
-							<label></label>
+							<label for="bday" style="display: none;" class="bday-label">Birthdate</label>
 						</div>
 
 						<div class="form-control">
 							<input type="password" id="password" name="password" required />
 							<label for="password">Password</label>
 						</div>
+
 						<div class="form-control">
                             <p class="location">Location:</p>
                             <label for="location"></label>
                                 <select name="location" id="location" required>
                                     <option value="ph">Philipines</option>
-                                    <option value="usa" selected>United States of America</option>
+                                    <option value="us" selected>United States of America</option>
                                     <option value="uk">United Kingdom</option>
                                     <option value="jp">Japan</option>
                                     <option value="other">Other</option>
@@ -57,11 +58,10 @@
                         </div>
 
                         <div class="captcha">
-                            <label for="captcha-input"></label>
                             <div class="preview"></div>
                             <div class="captcha-form">
                                 <input type="text" id="captcha-form" placeholder="Enter captcha text">
-                                <button class="captcha-refresh">
+                                <button class="captcha-refresh" type="button">
                                     <i class="fa fa-refresh" aria-hidden="true"></i>
                                 </button>
                             </div>
@@ -70,9 +70,8 @@
                         <br>
 
                         <div>
-							<button type="submit" name="submit" value="Login" onclick="lsRememberMe() " class="button-65" role="button">Register</button>
+							<button type="submit" name="submit" value="register" onclick="checkCaptcha()" class="button-65" role="button">Register</button>
 						</div>
-
 					</form>
 				</div>
                 <p>Already have an account?</p>
@@ -95,6 +94,13 @@
         transition-delay: ${idx * 50}ms
       ">${letter}</span>`)
 			.join('');
+	});
+
+	document.getElementById('bday').addEventListener('click', ()=>{
+		document.querySelector('.bday-label').style.display = 'block';
+	});
+	document.getElementById('bday').addEventListener('blur', ()=>{
+		document.querySelector('.bday-label').style.display = 'none';
 	});
 </script>
 <script src="scripts/captcha.js"></script>

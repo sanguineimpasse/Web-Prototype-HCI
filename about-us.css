@@ -34,6 +34,7 @@ div.main-contents{
     width: 50vw;
     height: 44vw;
     background-color: rgba(0, 0, 0, 0.323);
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.46);
     border-radius: 16px;
     border: 2px solid black;
     overflow: none;
@@ -67,17 +68,28 @@ p{
     padding-right: 2.5vw;
 }
 
-a.return-link{
-    margin: 2vw;
+ul.nav {
+    z-index: 5;
+    margin-top: 3.4vw;
+    margin-left: 2vw;
     position: fixed;
+}
+
+li{
+    list-style-type: none;
+    float: left;
+}
+
+a.return-link{
+    margin-right: 1vw;
     font-size: 1.2rem;
     text-decoration: none;
     background-color: rgba(0, 0, 0, 0.507);
     padding: 1vw;
     border: 2px solid black;
     border-radius: 16px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.46);
     cursor:pointer;
-    z-index: 5;
 }
 
 a:hover{

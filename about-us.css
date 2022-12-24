@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: 'Source Sans Pro Regular', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+html,body,main{
+    height: 100%;
+    background: linear-gradient(to bottom right, #8d8787 0%, #1e2634 100%);
+}
+
+div.page-container{
+    display: block;
+    
+}
+
+div.car{
+    position: fixed;
+    float: left;
+    height: 49vw;
+    width: 45vw;
+}
+
+div.main-contents{
+    position: fixed;
+    float: left;
+    margin-top: 2.5vw;
+    margin-left: 47vw;
+    width: 50vw;
+    height: 44vw;
+    background-color: rgba(0, 0, 0, 0.323);
+    border-radius: 16px;
+    border: 2px solid black;
+    overflow: none;
+}
+
+img.logo{
+    width: 7vw;
+    margin-top: 1vw;
+    margin-left: 21.5vw;
+}
+
+img.car-gif{
+    margin-top: 12vw;
+    margin-left: 2vw;
+    width: 40vw;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.635);
+}
+
+h1{
+    font-family: 'Source Sans Pro Bold', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+p{
+    padding-top: 1vw;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+}
+
+a.return-link{
+    margin: 2vw;
+    position: fixed;
+    font-size: 1.2rem;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.507);
+    padding: 1vw;
+    border: 2px solid black;
+    border-radius: 16px;
+    cursor:pointer;
+    z-index: 5;
+}
+
+a:hover{
+    background-color: grey;
+}

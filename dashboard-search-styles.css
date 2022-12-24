@@ -1,291 +1,11 @@
-@font-face {
-    font-family: 'Source Sans Pro Regular';
-    src: url(fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf) format('truetype');
-}
-@font-face {
-    font-family: 'Source Sans Pro Light';
-    src: url(fonts/Source_Sans_Pro/SourceSansPro-Light.ttf) format('truetype');
-}
-
 :root{
     --blue1: #1e2634;
     --blue2: #367bf1;
     --blue2active: #204d9a;
     --grey1: rgb(225, 225, 225);
-    --grey1lighter: rgb(241, 241, 241);
+    --grey1lighter: rgba(246, 246, 246, 0.67);
     --grey1active: rgb(128, 128, 128);
     --grey2: rgb(57, 57, 57);
-}
-
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'Source Sans Pro Regular', sans-serif;
-    font-size: 1em;
-}
-
-body{
-    height: 100vh;
-    background: white;
-}
-
-div.navbar-container{
-    display: block;
-    position: fixed;
-    background-color: var(--blue1);
-}
-
-div.navbar-left{
-    display: block;
-    float: left;
-
-    width: 6.5vw;
-    height: 100vh;
-    border-right: 0.15em solid var(--grey1);
-}
-
-ul{
-    margin-top: -2vh;
-    list-style-type: none;
-}
-
-.logo{
-    width: 6.2vw;
-}
-
-.logo2{
-    margin-left: 1.2vw;
-    width: 13vw;
-}
-
-li.navbar{
-    cursor: pointer;
-    background-color: var(--grey1);
-    height: 4.5vw;
-    width: 4.5vw;
-    border: 2px solid var(--grey1lighter);
-    margin-left: 0.8vw;
-    margin-top: 0.7vw;
-    border-radius: 100em;
-}
-
-li.navbar:hover {
-    background-color: var(--grey1active);
-    border-color: var(--grey1);
-    font-weight: bolder;
-}
-
-li.navbar-extension a{
-    text-align: center;
-    color: var(--grey2);
-    font-size: 1.4em;
-    text-decoration: none;
-    font-family: 'Source Sans Pro';
-}
-
-li.bottom{
-    bottom: 0;
-    position: fixed;
-    margin-bottom: 2vh;
-}
-
-img.nav-icon{
-    margin-top: 1vw;
-    margin-left: 1vw;
-    width: 2.5vw;
-}
-
-/*navbar extension*/
-div.navbar-extension{
-    display: none; /* change to block*/
-    float: left;
-    background-color: var(--blue1);
-    box-shadow: 4px 0px 16px black;
-    width: 16vw;
-    height: 100vh;
-}
-
-div.nav-extension-toggler{
-    display: inline-block;
-    position: fixed;
-    height: 100vw;
-    width: 10vw;
-    background-color: rgba(0, 0, 0, 0);
-    margin-left: 16vw;
-}
-
-ul.navbar-extension{
-    margin-top: 13.7vh;
-}
-
-li.navbar-extension{
-    height: 8vh;
-    width: 14vw;
-    border: 2px solid var(--grey1lighter);
-    margin-left: 0.8vw;
-    margin-top: 1vw;
-    border-radius: 1em;
-    font-weight: bold;
-}
-
-.sep{
-    margin-top: 2em;
-}
-
-p.nav-links{
-    margin-top: 0.8em;
-}
-
-
-
-/*main content*/
-div.main-content{
-    display: block; 
-    margin-left: 12vw;
-    height: 100%;
-}
-
-div.topbar{
-    display: block;
-    padding-top: 1.8vw;
-
-    margin-bottom: 1vw;
-    /* background-color: red; */
-    height: 4.2vw;
-    width: 86.8vw;
-}
-
-h1.pagename{
-    font-size: 2.5vw;
-    display: inline;
-}
-
-div.username-container{
-    padding-left: 1.2em;
-    padding-right: 0.7em;
-    display: inline;
-    float: right;
-}
-
-div.username-container:hover{
-    cursor: pointer;
-    color: white;
-    background-color: var(--blue1);
-    border-radius: 8vw;
-}
-
-p.username{
-    float: left;
-    margin-right: 13px; /* this is in px so that the username and the icon will always stick together whatever the size of the window may be*/
-    padding-top: 1vw;
-    font-size: 1.4vw;
-}
-
-img.user-icon{
-    width: 3vw;
-    margin: 0.35em;
-}
-
-/*searchbox*/
-div.searchbox-container{
-    padding: 2em;
-    display: block;
-    position: static;
-    background-color: var(--grey1);
-    border: 2px solid black;
-    border-radius: 40px;
-    height: 11.8vw;
-    width: 75vw;
-}
-
-h1.title{
-    font-size: 1.5vw;
-}
-
-div.searchbar-container{
-    padding-top: 2.4vh;
-    padding-bottom: 2.4vh;
-}
-
-input.searchbar{
-    cursor: text;
-    padding: 0.1vw;
-    border: 2px solid var(--grey2);
-    border-radius: 8px;
-    height: 2.8vw;
-    width: 75vw;
-}
-
-div.searchbox-option-labels-container{
-    display: block;
-    margin-left: 2.4vw;
-    margin-bottom: 0.2vw;
-    font-size: 0.7vw;
-}
-
-p.searchbox-option-labels{
-    display: inline-block;
-    margin-right: 10.3vw;
-    text-align: center;
-}
-
-div.searchbox-options{
-    display: flex;
-    float: left; 
-    margin-left: 2vw;
-}
-
-.searchbox-styles{
-    background-color: var(--grey1lighter);
-    font-size: 1.2vw;
-    text-align: center;
-    margin-right: 2vw;
-    height: 3vw;
-    width: 12vw;  
-    border: 2px solid black;
-    border-radius: 8px;
-    box-shadow: 2px 2px 2px rgb(0,0,0,0.5);
-}
-
-select.searchbox-dropdown{
-    height: 3.2vw;
-}
-
-select{
-    background-color: white;
-}
-input.search-button{
-    text-decoration: none;
-    color: white;
-    background-color: var(--blue2);
-}
-
-input.search-button:hover{
-    background-color: var(--blue2active);
-}
-
-select{
-    cursor: pointer;
-}
-
-select.searchbox-dropdown{
-    display: inline-block;
-}
-
-input.searchbox-dropdown:hover, select:hover{
-    background-color: var(--grey1);
-}
-
-input{
-    cursor: pointer;
-}
-
-.allrights{
-    right: 0;
-    bottom: 0;
-    position: fixed;
-    margin-right: 1vw;
-    margin-bottom: 0.8vw;
 }
 
 /*dashboard content*/
@@ -299,21 +19,48 @@ div.search-contents{
     float: left;
 }
 
-div.search-details{
-    display: block;
-    float: right;
-    overflow: hidden;
-} 
-
-.dashboard-content{
-    display: block;
-    margin-bottom: 1vw;
+div.car-image-container{
+    float: left;
+    z-index: 1;
 }
 
-img.dashboard-images{
+img.dashboard-images-car{
     margin-right: 2vw;
     height: 16vw;
     border: 2px solid black;
+}
+
+div.search-details{
+    display: block;
+    float: right;
+    margin-right: 10vw;
+    overflow: hidden;
+} 
+
+div.price-container{
+    padding: 0.4vw 1vw 0.4vw 1vw;
+    margin-top: 2vw;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 16px;
+}
+
+p.details-price{
+    font-size: 1.9rem;
+    color: rgb(3, 187, 187);
+}
+
+.dashboard-content-search{
+    padding: 2vw;
+    display: block;
+    margin-bottom: 1vw;
+    width: 50vw;
+    height: 18vw;
+    border-radius: 16px;
+}
+
+.dashboard-content-search:hover{
+    background-color: var(--grey1lighter);
 }
 
 p.details-carname{
@@ -337,7 +84,7 @@ div.dashboard-search-filter{
     padding: 2vw;
     border: 2px solid black;
     box-shadow: 2px 2px 2px var(--grey2);
-    margin-left: 10vw;
+    margin-left: 6vw;
     display: block;
     float: left;
 }
@@ -349,11 +96,4 @@ div.car-logos-container{
     display: inline-block;
     float: none;
     bottom: 0;
-}
-
-.car-logos{
-    width: 5vw;
-    display: block;
-    margin-right: 4vw;
-    float: left;
 }

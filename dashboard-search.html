@@ -21,7 +21,7 @@
                     </a>
                 </li>
                 <li class="navbar">
-                    <a href="">
+                    <a href="customer.html">
                         <img src="icons/people.png" alt="icon for people" class="nav-icon">
                     </a>
                 </li>
@@ -39,7 +39,7 @@
             <div class="nav-extension-toggler" id="nav-toggler"></div>
             <ul class="navbar-extension">
                 <li class="navbar navbar-extension"><a href="#"><p class="nav-links">HOME</p></a></li>
-                <li class="navbar navbar-extension"><a href="#"><p class="nav-links">CUSTOMER</p></a></li>
+                <li class="navbar navbar-extension"><a href="customer.html"><p class="nav-links">CUSTOMER</p></a></li>
                 <li class="navbar navbar-extension"><a href="about-us.html"><p class="nav-links">ABOUT US</p></a></li>
             </ul>
             <hr class="sep">
@@ -94,55 +94,103 @@
         <div class="dashboard-contents-container">
             <div class="search-contents">
 
-                <div class="dashboard-content-search">
-                    <a href="#" class="carlink">
-                        <img src="img/cars/2017-wigo.jpg" alt="" class="dashboard-images-car">
-                        <div class="search-details">
-                        <p class="search-details details-carname">Toyota Wigo</p>
-                        <p class="search-details">4.9 out of 5</p>
-
-                        <div class="price-container">
-                            <label for="details-price">Price</label>
-                            <p class="details-price">₱ 16,320</p>
+                <div class="dashboard-content-search hatchback">
+                    <a href="demo-carpages/wigo.html" class="carlink">
+                        <div class="car-image-container">
+                            <img src="img/cars/2017-wigo.jpg" alt="" class="dashboard-images-car">
                         </div>
-                    </div>
+                        <div class="search-details">
+                            <p class="search-details details-carname">Toyota Wigo</p>
+                            <p class="search-details">4.9 out of 5</p>
+
+                            <div class="price-container">
+                                <label for="details-price">Price</label>
+                                <p class="details-price">₱ 16,320</p>
+                            </div>
+                        </div>
                     </a>
                 </div>
             
-                <div class="dashboard-content-search">
-                    <a href="#">
+                <div class="dashboard-content-search sedan">
+                    <a href="demo-carpages/mirage.html" class="carlink">
                         <div class="car-image-container">
-                            <img src="img/cars/2017-wigo.jpg" alt="" class="dashboard-images-car">
+                            <img src="img/cars/2019-mirage-g4.jpg" alt="" class="dashboard-images-car">
                         </div>
                         <div class="search-details">
-                            <p class="details-carname">$car-name$</p>
-                            <p>$score$ out of 5</p>
-                            
+                            <p class="search-details details-carname">Mitsubishi Mirage G4</p>
+                            <p class="search-details">4.4 out of 5</p>
+
                             <div class="price-container">
                                 <label for="details-price">Price</label>
-                                <p class="details-price">₱ $score$</p>
+                                <p class="details-price">₱ 19,450</p>
                             </div>
                         </div>
                     </a>
                 </div>
 
-                <div class="dashboard-content-search">
-                    <a href="#">
+                <div class="dashboard-content-search suv">
+                    <a href="#" class="carlink">
                         <div class="car-image-container">
-                            <img src="img/cars/2017-wigo.jpg" alt="" class="dashboard-images-car">
+                            <img src="img/cars/2022-innova.jpg" alt="" class="dashboard-images-car">
                         </div>
                         <div class="search-details">
-                            <p class="details-carname">$car-name$</p>
-                            <p>$score$ out of 5</p>
-                            
+                            <p class="search-details details-carname">Toyota Innova</p>
+                            <p class="search-details">4.6 out of 5</p>
+
                             <div class="price-container">
                                 <label for="details-price">Price</label>
-                                <p class="details-price">₱ $score$</p>
+                                <p class="details-price">₱ 32,225</p>
                             </div>
                         </div>
                     </a>
                 </div>
-            </div>
+
+                <div class="dashboard-content-search sedan">
+                    <a href="#" class="carlink">
+                        <div class="car-image-container">
+                            <img src="img/cars/2019-tesla-model3.jpg" alt="" class="dashboard-images-car">
+                        </div>
+                        <div class="search-details">
+                            <p class="search-details details-carname">Tesla Model 3</p>
+                            <p class="search-details">4.1 out of 5</p>
+
+                            <div class="price-container">
+                                <label for="details-price">Price</label>
+                                <p class="details-price">₱ 65,484</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="dashboard-content-search suv">
+                    <a href="#" class="carlink">
+                        <div class="car-image-container">
+                            <img src="img/cars/2022-ford-everest.jpg" alt="" class="dashboard-images-car">
+                        </div>
+                        <div class="search-details">
+                            <p class="search-details details-carname">Ford Everest</p>
+                            <p class="search-details">4.3 out of 5</p>
+
+                            <div class="price-container">
+                                <label for="details-price">Price</label>
+                                <p class="details-price">₱ 52,796</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="dashboard-content-search no-searches-found">
+                    <a href="#" class="carlink">
+                        <div class="car-image-container">
+                            <img src="img/no.png" alt="" class="dashboard-images-car">
+                        </div>
+                        <div class="search-details">
+                            <p class="search-details details-carname">No Cars Found</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div> <!--search contents-->
 
             <div class="dashboard-search-filter">
                 <h1 class="search-labels">Search Filters</h1>
@@ -153,12 +201,13 @@
                     <option value="">Price (Lowest-Highest)</option>
                 </select>
                 <p class="search-labels">Car type:</p>
-                <select name="sortby-cartype" class="searchbox-dropdown searchbox-styles" id="sortby-cartype">
-                    <option value="">Sedan</option>
-                    <option value="">Hatchback</option>
-                    <option value="">SUV</option>
-                    <option value="">Hardtop</option>
-                    <option value="">Convertible</option>
+                <select name="sortby-cartype" class="searchbox-dropdown searchbox-styles" id="sortby-cartype" onchange="filterCarType()">
+                    <option value="all">All</option>
+                    <option value="sedan">Sedan</option>
+                    <option value="hatchback">Hatchback</option>
+                    <option value="suv">SUV</option>
+                    <option value="hardtop">Hardtop</option>
+                    <option value="convertible">Convertible</option>
                 </select>
             </div>
         </div>
@@ -175,6 +224,7 @@
             <p>&#169; Avventura Auto 2022</p>
         </div>
     </div>
+<script src="scripts/search-filters.js"></script>
 <script src="scripts/dashboard-navbar-script.js"></script>
 <script src="scripts/select-time-population.js"></script>
 </body>

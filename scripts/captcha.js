@@ -37,9 +37,11 @@ function checkCaptcha(){
 
     if(captchaValue === userInputCaptcha){
         console.log('THE USER PASSED THE VIBE CHECK');
+        window.location.href = "dashboard.html";
     }
     else if(captchaValue !== userInputCaptcha){
         console.log('THE USER DID NOT PASS THE VIBE CHECK');
+        alert('kabongo mo ulitin mo captcha');
         generateCaptcha();
         setCaptcha();
     }

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avventura Auto</title>
+    <link rel="stylesheet" href="car-display.css">
+    <link rel="stylesheet" href="../import-fonts.css">
+    <link rel="stylesheet" href="../dashboard-styles.css">
+    <link rel="shortcut icon" href="../img/aalogo.png">
+</head>
+<body>
+    <!--navbar-->
+    <div class="navbar-container">
+        <div class="navbar-left">
+            <img src="../img/aalogo.png" alt="Avventura Logo" class="logo">
+            <ul>
+                <li class="navbar">
+                    <a href="../dashboard.html">
+                        <img src="../icons/home.png" alt="icon for home" class="nav-icon">
+                    </a>
+                </li>
+                <li class="navbar">
+                    <a href="../customer.html">
+                        <img src="../icons/people.png" alt="icon for people" class="nav-icon">
+                    </a>
+                </li>
+                <li class="navbar">
+                    <a href="../about-us.html">
+                        <img src="../icons/city.png" alt="icon for city" class="nav-icon">
+                    </a>
+                </li>
+                <li class="navbar bottom" id="hide-nav">
+                    <img src="../icons/dash.png" alt="icon for nav-show" class="nav-icon" id="nav-show-icon">
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-extension" id="slide">
+            <div class="nav-extension-toggler" id="nav-toggler"></div>
+            <ul class="navbar-extension">
+                <li class="navbar navbar-extension"><a href="#"><p class="nav-links">HOME</p></a></li>
+                <li class="navbar navbar-extension"><a href="../customer.html"><p class="nav-links">CUSTOMER</p></a></li>
+                <li class="navbar navbar-extension"><a href="../about-us.html"><p class="nav-links">ABOUT US</p></a></li>
+            </ul>
+            <hr class="sep">
+            <img src="../img/aalogo.png" alt="Avventura Logo" class="logo2">
+        </div>
+        
+    </div>
+
+    <!--MAIN PAGE-->
+    <div class="main-content" >
+        <div class="topbar">
+            <h1 class="pagename">Avventura Auto</h1>
+            <div class="username-container">
+                <a href="..\customer.html">
+                    <p class="username">Username</p>
+                    <img class="user-icon" src="../img/person-placeholder.png" alt="profile picture">
+                </a>
+            </div>
+        </div>
+
+        <div class="dashboard-contents-container">
+            <div class="information-container-top">
+                <img src="../img/cars/2017-wigo.jpg" alt="" class="car-image">
+                <div class="car-details">
+                    <p>Car Details:</p>
+                    <p class="car-name">Toyota Wigo</p>
+                    <p>Hatchback</p>
+                    <p>Automatic</p>
+                    <p>5-seater capacity</p>
+                    <p>4.9 out of 5</p>
+                    <div class="checkout-button">
+                        <button type="button" class="checkout-button" onclick="goCheckout()">Checkout</button>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews">
+                <h1 class="title">Customer Reviews</h1>
+                <div class="userinfo">
+                    <img src="../img/person-placeholder.png" class="pfp">
+                    <h1 class="username">Robert </h1>
+                </div>
+                <div class="userreview">
+                    <p class="reviewtext">
+                        Car was in GREAT condition, I cannot emphasize how great it was. 
+                        Only issue I had was I didn't find this website sooner. I had a great 
+                        trip in California riding this baby! 😎😎😎
+                        <br><br>
+                        We've been trying to reach you concerning your vehicle's extended warranty. 
+                        You should've received a notice in the mail about your car's extended warranty eligibility. 
+                        Since we've not gotten a response, we're giving you a final courtesy call 
+                        before we close out your file. Press 2 to be removed and placed on our do-not-call 
+                        list. To speak to someone about possibly extending or reinstating your vehicle's 
+                        warranty, press 1 to speak with a warranty specialist.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="car-logos-container">
+                <img src="../img/carlogos/toyota.png" alt="" class="car-logos">
+                <img src="../img/carlogos/mitsubishi.png" alt="" class="car-logos">
+                <img src="../img/carlogos/ford.png" alt="" class="car-logos">
+                <img src="../img/carlogos/tesla.png" alt="" class="car-logos">
+                <img src="../img/carlogos/jeep.png" alt="" class="car-logos">
+            </div>
+        </div>
+
+        <div class="allrights">
+            <p class="allrights">&#169; Avventura Auto 2022</p>
+        </div>
+    </div>
+<script type="text/javascript">
+    function goCheckout(){
+        window.location.href = "checkout.html";
+    }
+</script>
+<script src="../scripts/dashboard-navbar-script.js"></script>
+</body>
+</html>

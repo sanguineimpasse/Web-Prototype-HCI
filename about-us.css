@@ -40,6 +40,11 @@ div.main-contents{
     overflow: none;
 }
 
+p.text-body{
+    height: 25vw;
+    overflow: hidden;
+}
+
 img.logo{
     width: 7vw;
     margin-top: 1vw;

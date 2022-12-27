@@ -33,10 +33,12 @@
 						<div class="form-control">
 							<input type="text" id="username" name="username" required autofocus/>
 							<label>Username</label>
+								<p class="incorrect-user-warning">User does not exist</p>
 						</div>
 						<div class="form-control">
-							<input type="password" id="password" name="password" required />
+							<input type="password" id="password" name="password" onkeypress="handle(event)" required />
 							<label>Password</label>
+								<p class="incorrect-password-warning">Incorrect password</p>
 							<p><a href="#">Forgot password?</a></p>
 						</div>
 						<div class="div-remember">
@@ -45,7 +47,7 @@
 						</div>
 
 						<div>
-							<button type="submit" name="submit" value="Login" onclick="lsRememberMe()" class="button-65" role="button">Log In</button>
+							<button type="button" name="submit" value="Login" onclick="checkSignIn()" class="button-65" role="button">Log In</button>
 						</div>
 
 					</form>
@@ -73,5 +75,13 @@
       ">${letter}</span>`)
 			.join('');
 	});
+
+	function handle(e){
+        if(e.keyCode === 13){
+            e.preventDefault(); // Ensure it is only this code that runs
+			checkSignIn();
+        }
+    }
 </script>
+<script src="scripts/testaccounts.js"></script>
 </html>

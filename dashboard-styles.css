@@ -6,6 +6,8 @@
     --grey1lighter: rgb(241, 241, 241);
     --grey1active: rgb(128, 128, 128);
     --grey2: rgb(57, 57, 57);
+    --buttongreen: rgb(60, 199, 141);
+    --buttongreenactive: rgb(35, 128, 90);
 }
 
 *{
@@ -65,10 +67,12 @@ li.navbar:hover {
 }
 
 a{
+    color: black;
     display: inline-block;
     height: 100%;
     width: 100%;
 }
+
 
 li.navbar-extension a{
     text-align: center;
@@ -174,6 +178,9 @@ p.username{
     margin-right: 13px; /* this is in px so that the username and the icon will always stick together whatever the size of the window may be*/
     padding-top: 1vw;
     font-size: 1.4vw;
+}
+p.username:hover{
+    color: white;
 }
 
 img.user-icon{

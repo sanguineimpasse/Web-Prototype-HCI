@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Page</title>
+    <link rel="stylesheet" href="import-fonts.css">
+    <link rel="stylesheet" href="dashboard-styles.css">
+    <link rel="stylesheet" href="customer.css">
+    <link rel="shortcut icon" href="img/aalogo.png">
+</head>
+<body>
+    <!--navbar-->
+    <div class="navbar-container">
+        <div class="navbar-left">
+            <img src="img/aalogo.png" alt="Avventura Logo" class="logo">
+            <ul>
+                <li class="navbar">
+                    <a href="dashboard.html">
+                        <img src="icons/home.png" alt="icon for home" class="nav-icon">
+                    </a>
+                </li>
+                <li class="navbar">
+                    <a href="#">
+                        <img src="icons/people.png" alt="icon for people" class="nav-icon">
+                    </a>
+                </li>
+                <li class="navbar">
+                    <a href="about-us.html">
+                        <img src="icons/city.png" alt="icon for city" class="nav-icon">
+                    </a>
+                </li>
+                <li class="navbar bottom" id="hide-nav">
+                    <img src="icons/dash.png" alt="icon for nav-show" class="nav-icon" id="nav-show-icon">
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-extension" id="slide">
+            <div class="nav-extension-toggler" id="nav-toggler"></div>
+            <ul class="navbar-extension">
+                <li class="navbar navbar-extension"><a href="dashboard.html"><p class="nav-links">HOME</p></a></li>
+                <li class="navbar navbar-extension"><a href="#"><p class="nav-links">CUSTOMER</p></a></li>
+                <li class="navbar navbar-extension"><a href="about-us.html"><p class="nav-links">ABOUT US</p></a></li>
+            </ul>
+            <hr class="sep">
+            <img src="img/aalogo.png" alt="Avventura Logo" class="logo2">
+        </div>
+        
+    </div>
+
+    <!--MAIN PAGE-->
+    <div class="main-content" >
+        <div class="topbar">
+            <h1 class="pagename">Avventura Auto</h1>
+        </div>
+
+        
+        <div class="customer-info-container">
+            <h1>Customer Info</h1>
+            <img src="icons/edit-blue.png" alt="" class="edit-icon">
+            <img src="img/person-placeholder.png" alt="" class="profile-picture">
+            <div class="infos-container">
+                <div class="info-edit-container">
+                    <p class="username-label">Email</p>
+                    <p class="username-text" id='email'>test.user27349@email.com</p>
+                </div>
+                <div class="info-edit-container">
+                    <p class="username-label">Username</p>
+                    <p class="username-text" id='username'>defaultuser</p>
+                    <input type="text" name="username" id="username" class="username-textbox textbox-style">
+                </div>
+                <div class="info-edit-container">
+                    <p class="username-label">Password</p>
+                    <p class="username-text" id='password'>****</p>
+                    <input type="text" name="username" id="password-textbox" class="username-textbox textbox-style">
+                </div>
+                <div class="edit-button">
+                    <button type="button" class="edit-button">Edit Profile</button>
+                </div>
+                <div class="edit-button">
+                    <button type="button" class="edit-button save-button">Save</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="logout-bar">
+            <button type="button" class="logout-button" onclick="logOut()">Log-out</button>
+        </div>
+
+        <div class="allrights">
+            <p>&#169; Avventura Auto 2022</p>
+        </div>
+    </div>
+<script src="scripts/dashboard-navbar-script.js"></script>
+<script src="scripts/editinfo.js"></script>
+</body>
+</html>

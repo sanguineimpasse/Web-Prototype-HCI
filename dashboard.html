@@ -15,12 +15,12 @@
             <img src="img/aalogo.png" alt="Avventura Logo" class="logo">
             <ul>
                 <li class="navbar">
-                    <a href="">
+                    <a href="#">
                         <img src="icons/home.png" alt="icon for home" class="nav-icon">
                     </a>
                 </li>
                 <li class="navbar">
-                    <a href="">
+                    <a href="customer.html">
                         <img src="icons/people.png" alt="icon for people" class="nav-icon">
                     </a>
                 </li>
@@ -38,7 +38,7 @@
             <div class="nav-extension-toggler" id="nav-toggler"></div>
             <ul class="navbar-extension">
                 <li class="navbar navbar-extension"><a href="#"><p class="nav-links">HOME</p></a></li>
-                <li class="navbar navbar-extension"><a href="#"><p class="nav-links">CUSTOMER</p></a></li>
+                <li class="navbar navbar-extension"><a href="customer.html"><p class="nav-links">CUSTOMER</p></a></li>
                 <li class="navbar navbar-extension"><a href="about-us.html"><p class="nav-links">ABOUT US</p></a></li>
             </ul>
             <hr class="sep">
@@ -52,8 +52,10 @@
         <div class="topbar">
             <h1 class="pagename">Avventura Auto</h1>
             <div class="username-container">
-                <p class="username">Username</p>
-                <img class="user-icon" src="img/person-placeholder.png" alt="profile picture">
+                <a href="customer.html">
+                    <p class="username">Username</p>
+                    <img class="user-icon" src="img/person-placeholder.png" alt="profile picture">
+                </a>
             </div>
         </div>
 
@@ -83,13 +85,13 @@
                         <option value="">--select time--</option>
                     </select>
                         
-                    <input type="submit" value="SEARCH" class="search-button searchbox-styles">
+                    <input type="button" value="SEARCH" class="search-button searchbox-styles" onclick="goSearch()">
                 </form>
             </div>
         </div>
 
         <div class="dashboard-contents-container">
-            <div class="showall-link">
+            <div class="showall-link" style="display: none;">
                 <a class="showall-link" href="dashboard-search.html">
                     <h1 class="clickhere">
                         Click here to show all cars!
@@ -142,6 +144,11 @@
             <p>&#169; Avventura Auto 2022</p>
         </div>
     </div>
+<script type="text/javascript">
+    function goSearch(){
+        window.location.href = "dashboard-search.html";
+    }
+</script>
 <script src="scripts/dashboard-navbar-script.js"></script>
 <script src="scripts/select-time-population.js"></script>
 </body>

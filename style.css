@@ -265,3 +265,12 @@ p.register{
     width: 2.5rem;
     height: 2.5rem;
 }
+
+p.incorrect-password-warning{
+    display: none;
+    color: red;
+}
+p.incorrect-user-warning{
+    display: none;
+    color: red;
+}

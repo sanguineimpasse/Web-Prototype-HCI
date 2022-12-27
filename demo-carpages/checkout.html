@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avventura Auto</title>
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="../import-fonts.css">
+    <link rel="stylesheet" href="../dashboard-styles.css">
+    <link rel="shortcut icon" href="../img/aalogo.png">
+</head>
+<body>
+    <!--navbar-->
+    <div class="navbar-container">
+        <div class="navbar-left">
+            <img src="../img/aalogo.png" alt="Avventura Logo" class="logo">
+            <ul>
+                <li class="navbar">
+                    <a href="../dashboard.html">
+                        <img src="../icons/home.png" alt="icon for home" class="nav-icon">
+                    </a>
+                </li>
+                <li class="navbar">
+                    <a href="../customer.html">
+                        <img src="../icons/people.png" alt="icon for people" class="nav-icon">
+                    </a>
+                </li>
+                <li class="navbar">
+                    <a href="../about-us.html">
+                        <img src="../icons/city.png" alt="icon for city" class="nav-icon">
+                    </a>
+                </li>
+                <li class="navbar bottom" id="hide-nav">
+                    <img src="../icons/dash.png" alt="icon for nav-show" class="nav-icon" id="nav-show-icon">
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-extension" id="slide">
+            <div class="nav-extension-toggler" id="nav-toggler"></div>
+            <ul class="navbar-extension">
+                <li class="navbar navbar-extension"><a href="#"><p class="nav-links">HOME</p></a></li>
+                <li class="navbar navbar-extension"><a href="../customer.html"><p class="nav-links">CUSTOMER</p></a></li>
+                <li class="navbar navbar-extension"><a href="../about-us.html"><p class="nav-links">ABOUT US</p></a></li>
+            </ul>
+            <hr class="sep">
+            <img src="../img/aalogo.png" alt="Avventura Logo" class="logo2">
+        </div>
+        
+    </div>
+
+    <!--MAIN PAGE-->
+    <div class="main-content" >
+        <div class="topbar">
+            <h1 class="pagename">Avventura Auto</h1>
+            <div class="username-container">
+                <a href="..\customer.html">
+                    <p class="username">Username</p>
+                    <img class="user-icon" src="../img/person-placeholder.png" alt="profile picture">
+                </a>
+            </div>
+        </div>
+
+        <div class="dashboard-contents-container">
+            <h1 class="contents-title">Summary of your rental booking</h1>
+            <!--left-->
+            <div class="driver-info-container">
+                <div class="driver-info-form">
+                    <h1 class="contents-title driver-info">Driver's Info</h1>
+                    <div class="driver-info-form-left">
+                        <input type="text" placeholder="First name" class="name-textbox">
+                        <input type="text" placeholder="Last name" class="name-textbox">
+                    </div>
+                    <div class="driver-info-form-right">
+                        <input type="date" id="form-date" name="form-date" class="date-and-license">
+                        <select name="license" class="date-and-license" id="license">
+                            <option value="null">--Driver's license issued by--</option>
+                        </select>
+                    </div>
+                    <div class="uploadbutton-container">
+                        <input type="file" id="myFile" name="filename" class="uploadbutton">
+                        <p class="driver-note">Please provide a picture of your driver's license here.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="agreement-container">
+                <input name="checkbox" type="checkbox" class="checkbox">
+                <label for="checkbox" class="agreement-text">
+                    By clicking the checkbox, you are agreeing to be charged an insurance
+                    fee in the case that you are involved in a vehicular accident. Avventura
+                    Auto is in lieu liable for the damages.
+                </label>
+            </div>
+            
+            <!--right-->
+            <div class="price-info-container">
+
+            </div>
+        </div>
+
+        <div class="allrights">
+            <p class="allrights">&#169; Avventura Auto 2022</p>
+        </div>
+    </div>
+<script type="text/javascript">
+    function goSearch(){
+        window.location.href = "../dashboard-search.html";
+    }
+</script>
+<script src="../scripts/dashboard-navbar-script.js"></script>
+</body>
+</html>

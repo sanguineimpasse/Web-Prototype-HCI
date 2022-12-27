@@ -1,0 +1,87 @@
+h1.title{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+div.information-container-top{
+    width: 70vw;
+    height: 24vw;
+}
+
+img.car-image{
+    float: left;
+    width: 30vw;
+    border: 2px solid black;
+}
+
+div.car-details{
+    float: left;
+    margin-left: 2vw;
+}
+p.allrights{
+    font-size: 1rem;
+}
+
+p{
+    font-size: 1.3rem;
+}
+
+p.car-name{
+    font-weight: bold;
+    font-size: 2.6rem;
+}
+
+div.checkout-button{
+    margin-top: 1.2vw;
+    float: left;
+    width: 10vw;
+}
+
+button.checkout-button{
+    cursor: pointer;
+    height: 3vw;
+    width: 10vw;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: var(--buttongreen);
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+button.checkout-button:hover{
+    background-color: var(--buttongreenactive);
+}
+
+div.userinfo{
+    margin-top: 2vw;
+}
+
+div.reviews{
+    height: 20vw;
+    width: 70vw;
+    border: 2px solid black;
+    padding: 2vw;
+}
+img.pfp{
+    margin-left: 1vw;
+    width: 4vw;
+    float: left;
+}
+div.userinfo{
+    width: 60vw;
+    height: 3vw;
+}
+div.userreview{
+    width: 60vw;
+    margin-top: 1vw;
+    margin-left: 6vw;
+}
+.username{
+    float: left;
+    margin-left: 1vw;
+}
+p.reviewtext{
+    font-size: 1.1rem;
+}

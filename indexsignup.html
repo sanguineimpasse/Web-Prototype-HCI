@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<title>Avventura Auto</title>
 	<link rel="stylesheet" type="text/css" href="stylesignup.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,6 +33,7 @@
 						<div class="form-control">
 							<input type="text" id="username" name="username" required autofocus />
 							<label for="username">Username</label>
+							<p class="not-allowed">Users are not allowed to have aa / AA / Aa on the start of their usernames as it is reserved for admin users </p>
 						</div>
 
                         <div class="form-control">
@@ -48,12 +49,12 @@
 						<div class="form-control">
                             <p class="location">Location:</p>
                             <label for="location"></label>
-                                <select name="location" id="location" required>
-                                    <option value="ph">Philipines</option>
-                                    <option value="us" selected>United States of America</option>
-                                    <option value="uk">United Kingdom</option>
-                                    <option value="jp">Japan</option>
-                                    <option value="other">Other</option>
+                            <select name="location" id="location" required>
+                                <option value="ph">Philipines</option>
+                                <option value="us" selected>United States of America</option>
+                                <option value="uk">United Kingdom</option>
+                                <option value="jp">Japan</option>
+                                <option value="other">Other</option>
                             </select>
                         </div>
 
@@ -70,7 +71,7 @@
                         <br>
 
                         <div>
-							<button type="submit" name="submit" value="register" onclick="checkCaptcha()" class="button-65" role="button">Register</button>
+							<button type="button" name="submit" value="register" onclick="checkCaptcha()" class="button-65" role="button" id="registerl">Register</button>
 						</div>
 					</form>
 				</div>
@@ -96,12 +97,22 @@
 			.join('');
 	});
 
+	//dynamically display the birthday label
 	document.getElementById('bday').addEventListener('click', ()=>{
 		document.querySelector('.bday-label').style.display = 'block';
 	});
 	document.getElementById('bday').addEventListener('blur', ()=>{
 		document.querySelector('.bday-label').style.display = 'none';
 	});
+
+	function handle(e){
+        if(e.keyCode === 13){
+            e.preventDefault(); // Ensure it is only this code that runs
+			checkCaptcha();
+        }
+    }
 </script>
+<script src="scripts/checkusername.js"></script>
 <script src="scripts/captcha.js"></script>
+<script src="scripts/signup.js"></script>
 </html>

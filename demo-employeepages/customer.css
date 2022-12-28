@@ -1,0 +1,111 @@
+h1{
+    font-size: 3vw;
+    margin-bottom: 1vw;
+}
+
+.customer-info-container{
+    margin-top: 3vw;
+    margin-left: 8vw;
+    padding: 3vw;
+    height: 26vw;
+    width: 57.5vw;
+    border: 2px solid black;
+    border-radius: 16px;
+    background-color: var(--grey1);
+    box-shadow: 2px 2px 2px 0 black;
+}
+
+img.profile-picture{
+    float: left;
+    margin: 2vh;
+    width: 19vw;
+}
+
+div.infos-container{
+    float: left;
+    margin-top: 2vw;
+    margin-left: 2vw;
+}
+
+div.info-edit-container{
+    display: block;
+    margin-bottom: 1vw;
+}
+
+.username-text{
+    font-size: 2.5vw;
+}
+
+div.edit-button{
+    display:block;
+    float: left;
+}
+
+button.edit-button{
+    height: 2vw;
+    width: 10vw;
+    font-size: 1.2vw;
+    background-color: var(--grey1lighter);
+    border: 2px solid black;
+    border-radius: 8px;
+}
+button.edit-button:hover{
+    color: white;
+    background-color: var(--grey1active);
+}
+
+button.save-button{
+    display: none;
+    background-color: var(--blue2);
+}
+button.save-button:hover{
+    background-color: var(--blue2active);
+}
+
+input.username-textbox{
+    display: none;
+}
+
+input.textbox-style{
+    margin-top: 2px;
+    height: 3vw;
+    width: 20vw;
+    font-size: 2.5vw;
+}
+
+img.edit-icon{
+    display: none;
+    cursor: pointer;
+    width: 6vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 23.5vw;
+    margin-left: 29.5vw;
+    background-color: #0e1b3276;
+    padding: 1vw;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px 2px black;
+}
+
+div.logout-bar{
+    margin-top: 2vw;
+    margin-left: 34vw;
+    height: 4vw;
+}
+
+.logout-button{
+    cursor: pointer;
+    height: 2vw;
+    width: 10vw;
+    color: white;
+    font-size: 1.2vw;
+    background-color: rgb(175, 145, 145);
+    border: 2px solid black;
+    border-radius: 8px;
+    z-index: 5;
+}
+
+.logout-button:hover{
+    background-color: rgb(73, 15, 15);
+}

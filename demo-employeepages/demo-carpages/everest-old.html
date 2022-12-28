@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avventura Auto</title>
+    <link rel="stylesheet" href="car-display.css">
+    <link rel="stylesheet" href="../import-fonts.css">
+    <link rel="stylesheet" href="../dashboard-styles.css">
+    <link rel="shortcut icon" href="../img/aalogo.png">
+    <style>
+        button.checkout-button{
+            cursor: pointer;
+            height: 3vw;
+            width: 10vw;
+            color: white;
+            font-size: 1.5vw;
+            font-weight: bold;
+            text-transform: uppercase;
+            background-color: var(--buttonred);
+            border: 2px solid black;
+            border-radius: 8px;
+        }button.checkout-button:hover{
+            background-color: var(--buttonredactive);
+        }
+    </style>
+</head>
+<body>
+    <!--navbar-->
+    <div class="navbar-container">
+        <div class="navbar-left">
+            <img src="../img/aalogo.png" alt="Avventura Logo" class="logo">
+            <ul>
+                <li class="navbar">
+                    <a href="../dashboard.html">
+                        <img src="../icons/home.png" alt="icon for home" class="nav-icon">
+                    </a>
+                </li>
+                <li class="navbar">
+                    <a href="../customer.html">
+                        <img src="../icons/people.png" alt="icon for people" class="nav-icon">
+                    </a>
+                </li>
+                <li class="navbar">
+                    <a href="../about-us.html">
+                        <img src="../icons/city.png" alt="icon for city" class="nav-icon">
+                    </a>
+                </li>
+                <li class="navbar bottom" id="hide-nav">
+                    <img src="../icons/dash.png" alt="icon for nav-show" class="nav-icon" id="nav-show-icon">
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-extension" id="slide">
+            <div class="nav-extension-toggler" id="nav-toggler"></div>
+            <ul class="navbar-extension">
+                <li class="navbar navbar-extension"><a href="#"><p class="nav-links">HOME</p></a></li>
+                <li class="navbar navbar-extension"><a href="../customer.html"><p class="nav-links">CUSTOMER</p></a></li>
+                <li class="navbar navbar-extension"><a href="../about-us.html"><p class="nav-links">ABOUT US</p></a></li>
+            </ul>
+            <hr class="sep">
+            <img src="../img/aalogo.png" alt="Avventura Logo" class="logo2">
+        </div>
+        
+    </div>
+
+    <!--MAIN PAGE-->
+    <div class="main-content" >
+        <div class="topbar">
+            <h1 class="pagename">Avventura Auto</h1>
+            <div class="username-container">
+                <a href="..\customer.html">
+                    <p class="username">Username</p>
+                    <img class="user-icon" src="../img/person-placeholder.png" alt="profile picture">
+                </a>
+            </div>
+        </div>
+
+        <div class="dashboard-contents-container">
+            <div class="information-container-top">
+                <img src="../img/cars/2022-ford-everest.jpg" alt="" class="car-image">
+                <div class="car-details">
+                    <p>Car Details:</p>
+                    <p class="car-name">Ford Everest</p>
+                    <p>SUV</p>
+                    <p>Automatic</p>
+                    <p>12-seater capacity</p>
+                    <p>4.3 out of 5</p>
+                    <div class="checkout-button">
+                        <button type="button" class="checkout-button">Unavailable</button>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews">
+                <h1 class="title">Customer Reviews</h1>
+                <div class="userinfo">
+                    <img src="../img/person-placeholder.png" class="pfp">
+                    <h1 class="username">Loremus Ipsumus Dacayao</h1>
+                </div>
+                <div class="userreview">
+                    <p class="reviewtext">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dolor a temporibus culpa 
+                        in molestiae eveniet ut nam, voluptatum quibusdam, accusantium eaque ex cum autem
+                        consequuntur soluta, aperiam maxime dignissimos?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum magni 
+                        alias fugiat cupiditate eos aspernatur a, necessitatibus nobis est dignissimos 
+                        quos ipsa ratione qui porro minima voluptatum! A, nemo illo?
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque fuga voluptatem inventore 
+                        doloribus maiores porro, tempore perferendis ipsam aspernatur, voluptate magnam reiciendis 
+                        molestiae dolorem animi iusto aliquid consequuntur, nemo laboriosam!
+                    </p>
+                </div> 
+                <div class="userinfo">
+                    <img src="../img/person-placeholder.png" class="pfp">
+                    <h1 class="username">Naruto Shimakaze Uzumaki Tenga Battoutai</h1>
+                </div>
+                <div class="userreview">
+                    <p class="reviewtext">
+                        Really nice car! the aircon is really cold too! it really feels like
+                        your driving in the mount everest. There is this weird reviewer on top of me though
+                        But yea i really like this car! i might actually buy me and my wife this car sometime in christmas... 
+                        maybe also buy one for my brother, sister, grandma, grandpa, nephew, niece, brother-in-law, sister-in-law,
+                        wife's boyfriend's husband, juniour and others...
+                    </p>
+                </div> 
+            </div>
+            
+            <div class="car-logos-container">
+                <img src="../img/carlogos/toyota.png" alt="" class="car-logos">
+                <img src="../img/carlogos/mitsubishi.png" alt="" class="car-logos">
+                <img src="../img/carlogos/ford.png" alt="" class="car-logos">
+                <img src="../img/carlogos/tesla.png" alt="" class="car-logos">
+                <img src="../img/carlogos/jeep.png" alt="" class="car-logos">
+            </div>
+        </div>
+
+        <div class="allrights">
+            <p class="allrights">&#169; Avventura Auto 2022</p>
+        </div>
+    </div>
+<script type="text/javascript">
+    function goCheckout(){
+        window.location.href = "checkout.html";
+    }
+</script>
+<script src="../scripts/dashboard-navbar-script.js"></script>
+</body>
+</html>

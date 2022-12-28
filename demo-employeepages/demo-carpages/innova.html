@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avventura Auto</title>
+    <link rel="stylesheet" href="car-display.css">
+    <link rel="stylesheet" href="car-display-admin.css">
+    <link rel="stylesheet" href="../../import-fonts.css">
+    <link rel="stylesheet" href="../dashboard-styles.css">
+    <link rel="shortcut icon" href="../../img/aalogo.png">
+</head>
+<body>
+    <!--navbar-->
+    <div class="navbar-container">
+        <div class="navbar-left">
+            <img src="../../img/aalogo.png" alt="Avventura Logo" class="logo">
+            <ul>
+                <li class="navbar">
+                    <a href="../dashboard.html">
+                        <img src="../../icons/home.png" alt="icon for home" class="nav-icon">
+                    </a>
+                </li>
+                <li class="navbar">
+                    <a href="../admin.html">
+                        <img src="../../icons/people.png" alt="icon for people" class="nav-icon">
+                    </a>
+                </li>
+                <li class="navbar">
+                    <a href="#">
+                        <img src="../../icons/city.png" alt="icon for city" class="nav-icon">
+                    </a>
+                </li>
+                <li class="navbar bottom" id="hide-nav">
+                    <img src="../../icons/dash.png" alt="icon for nav-show" class="nav-icon" id="nav-show-icon">
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-extension" id="slide">
+            <div class="nav-extension-toggler" id="nav-toggler"></div>
+            <ul class="navbar-extension">
+                <li class="navbar navbar-extension"><a href="#"><p class="nav-links">HOME</p></a></li>
+                <li class="navbar navbar-extension"><a href="../admin.html"><p class="nav-links">ADMIN</p></a></li>
+                <li class="navbar navbar-extension"><a href="#"><p class="nav-links">ABOUT US</p></a></li>
+            </ul>
+            <hr class="sep">
+            <img src="../../img/aalogo.png" alt="Avventura Logo" class="logo2">
+        </div>
+        
+    </div>
+
+    <!--MAIN PAGE-->
+    <div class="main-content" >
+        <div class="topbar">
+            <h1 class="pagename">Avventura Auto</h1>
+            <div class="username-container">
+                <a href="../admin.html">
+                    <p class="username">Admin</p>
+                    <img class="user-icon" src="../../img/person-placeholder.png" alt="profile picture">
+                </a>
+            </div>
+        </div>
+
+        <div class="dashboard-contents-container">
+            <div class="information-container-top">
+                <div class="car-image-container">
+                    <div class="car-image-overlay"></div>
+                    <img src="../../img/cars/2022-innova.jpg" alt="" class="car-image">
+                </div>
+                <div class="car-details">
+                    <p>Car Details:</p>
+                    <p class="car-name">Toyota Innova</p>
+                    <p>SUV</p>
+                    <p>Automatic</p>
+                    <p>10-seater capacity</p>
+                    <p>4.6 out of 5</p>
+                    <div class="checkout-button">
+                        <button type="button" class="checkout-button" id="car-button" style="background-color: var(--buttonred);">Car Availability: No</button>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews">
+                <h1 class="title">Customer Reviews</h1>
+                <div class="userinfo">
+                    <img src="../../img/person-placeholder.png" class="pfp">
+                    <h1 class="username">Johnwell Llhoyd</h1>
+                </div>
+                <div class="userreview">
+                    <p class="reviewtext">
+                        If you're looking for a car rental company that won't give you any headaches, then look no 
+                        further than Avventura Auto! I've rented from them several times and have always had a great 
+                        experience. The cars are always clean and well-maintained, and the staff is friendly and helpful. 
+                        I would definitely recommend Avventura to anyone!
+                        <br>
+                        This Avventura works certainly well. It energetically improves my golf by a lot.
+                        The box this comes in is 3 yard by 6 light-year and weights 11 megaton!!
+                        i use it every Tuesday when i'm in my pub.
+                        It only works when I'm Heard Island and McDonald Islands.
+                        My co-worker Matthew has one of these. He says it looks gigantic.
+                        heard about this on chicha radio, decided to give it a try.
+                        one of my hobbies is programming. and when i'm programming this works great.
+                        It only works when I'm Singapore.
+                        I tried to behead it but got truffle all over it.
+                        one of my hobbies is spearfishing. and when i'm spearfishing this works great.
+                        heard about this on gypsy jazz radio, decided to give it a try.
+                        This Avventura works considerably well. It recklessly improves my basketball by a lot.
+                        i use it for 10 weeks when i'm in my jail.
+                    </p>
+                </div>
+                <div class="userinfo">
+                    <img src="../../img/person-placeholder.png" class="pfp">
+                    <h1 class="username">Princess Alisa Claria</h1>
+                </div>
+                <div class="userreview">
+                    <p class="reviewtext">
+                        If you're looking for a new car, I highly recommend using ABC Car Sales! 
+                        They were so helpful and made the process so easy. I definitely recommend them 
+                        to anyone looking for a new car!<br><br>
+                        This became my daily driver car one day when I found out that my dad wont catch 
+                        me travelling without him knowing, so that i can escape the clutches of his tyranny...
+                        Seriously, i hate him so much!! one time I was eating pizza he just grabbed it out of
+                        my hands and devoured it like a predator in the movie predator! He looks so scary when
+                        he does that actually. God I can't wait to find a job and leave my home for good!
+                    </p>
+                </div>
+            </div>
+            
+            <div class="car-logos-container">
+                <img src="../../img/carlogos/toyota.png" alt="" class="car-logos">
+                <img src="../../img/carlogos/mitsubishi.png" alt="" class="car-logos">
+                <img src="../../img/carlogos/ford.png" alt="" class="car-logos">
+                <img src="../../img/carlogos/tesla.png" alt="" class="car-logos">
+                <img src="../../img/carlogos/jeep.png" alt="" class="car-logos">
+            </div>
+        </div>
+
+        <div class="allrights">
+            <p class="allrights">&#169; Avventura Auto 2022</p>
+        </div>
+    </div>
+<script type="text/javascript">
+    let carAvailability = false;
+    document.getElementById('car-button').addEventListener('click', ()=>{
+        changeAvailability();
+    });
+    const availabilityButton = document.getElementById('car-button');
+    function changeAvailability(){
+    if(carAvailability){
+        availabilityButton.style.background = 'var(--buttonred)';
+        carAvailability = false;
+        availabilityButton.innerText = 'Car Availability: No';
+    }
+    else{
+        availabilityButton.style.background = 'var(--buttongreen)';
+        carAvailability = true;
+        availabilityButton.innerText = 'Car Availability: Yes';
+    }
+}
+</script>
+<script src="../../scripts/dashboard-navbar-script.js"></script>
+</body>
+</html>

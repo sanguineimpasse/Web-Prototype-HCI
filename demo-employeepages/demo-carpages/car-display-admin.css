@@ -1,0 +1,12 @@
+.car-image-overlay{
+    cursor: pointer;
+    position: absolute;
+    float: left;
+    height: 18.1vw;
+    width: 29.1vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url('../../icons/edit-blue.png');
+    background-position: center;
+    background-size: 10vw;
+    background-repeat: no-repeat;
+}

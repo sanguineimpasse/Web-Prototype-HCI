@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avventura Auto</title>
+    <link rel="stylesheet" href="../import-fonts.css">
+    <link rel="stylesheet" href="dashboard-search-styles.css">
+    <link rel="stylesheet" href="dashboard-styles.css">
+    <link rel="shortcut icon" href="../img/aalogo.png">
+</head>
+<body>
+    <!--navbar-->
+    <div class="navbar-container">
+        <div class="navbar-left">
+            <img src="../img/aalogo.png" alt="Avventura Logo" class="logo">
+            <ul>
+                <li class="navbar">
+                    <a href="dashboard.html">
+                        <img src="../icons/home.png" alt="icon for home" class="nav-icon">
+                    </a>
+                </li>
+                <li class="navbar">
+                    <a href="admin.html">
+                        <img src="../icons/people.png" alt="icon for people" class="nav-icon">
+                    </a>
+                </li>
+                <li class="navbar">
+                    <a href="#">
+                        <img src="../icons/city.png" alt="icon for city" class="nav-icon">
+                    </a>
+                </li>
+                <li class="navbar bottom" id="hide-nav">
+                    <img src="../icons/dash.png" alt="icon for nav-show" class="nav-icon" id="nav-show-icon">
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-extension" id="slide">
+            <div class="nav-extension-toggler" id="nav-toggler"></div>
+            <ul class="navbar-extension">
+                <li class="navbar navbar-extension"><a href="dashboard.html"><p class="nav-links">HOME</p></a></li>
+                <li class="navbar navbar-extension"><a href="admin.html"><p class="nav-links">ADMIN</p></a></li>
+                <li class="navbar navbar-extension"><a href="#"><p class="nav-links">ABOUT US</p></a></li>
+            </ul>
+            <hr class="sep">
+            <img src="../img/aalogo.png" alt="Avventura Logo" class="logo2">
+        </div>
+        
+    </div>
+
+    <!--MAIN PAGE-->
+    <div class="main-content" >
+        <div class="topbar">
+            <h1 class="pagename">Avventura Auto</h1>
+            <div class="username-container">
+                <a href="admin.html">
+                    <p class="username">Admin</p>
+                    <img class="user-icon" src="../img/person-placeholder.png" alt="profile picture">
+                </a>
+            </div>
+        </div>
+
+        <div class="searchbox-container">
+            <h1 class="title">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
+            <div class="searchbar-container">
+                <input class="searchbar" type="text" placeholder="Search here..">
+            </div>
+
+            <div class="searchbox-option-labels-container">
+                <p class="searchbox-option-labels">Pick-Up Date</p>
+                <p class="searchbox-option-labels">Pick-Up Time</p>
+                <p class="searchbox-option-labels">Drop-Off Date</p>
+                <p class="searchbox-option-labels">Drop-Off Time</p>
+            </div>
+            <div class="searchbox-options">
+                <form action="">
+                    <!--pickup date-->
+                    <input type="date" id="pickup-date" name="pickup-date" class="searchbox-dropdown searchbox-styles">
+
+                    <select name="pickup-time" class="searchbox-dropdown searchbox-styles" id="pickup-time">
+                        <option value="null">--select time--</option>
+                    </select>
+
+                    <!--dropoff date-->
+                    <input type="date" id="dropoff-date" name="dropoff-date" class="searchbox-dropdown searchbox-styles">
+
+                    <select name="dropoff-time" class="searchbox-dropdown searchbox-styles" id="dropoff-time">
+                        <option value="null">--select time--</option>
+                    </select>
+                        
+                    <input type="submit" value="SEARCH" class="search-button searchbox-styles">
+                </form>
+            </div>
+        </div>
+
+        <div class="dashboard-contents-container">
+            <div class="search-contents">
+
+                <div class="dashboard-content-search hatchback">
+                    <a href="demo-carpages/wigo.html" class="carlink">
+                        <div class="car-image-container">
+                            <div class="car-image-overlay car-image-edit-button"></div>
+                            <img src="../img/cars/2017-wigo.jpg" alt="" class="dashboard-images-car">
+                        </div>
+                        <div class="search-details">
+                            <p class="search-details details-carname">Toyota Wigo</p>
+                            <p class="search-details">4.9 out of 5</p>
+
+                            <div class="price-container">
+                                <label for="details-price">Price</label>
+                                <p class="details-price">₱ 16,320</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            
+                <div class="dashboard-content-search sedan">
+                    <a href="demo-carpages/mirage.html" class="carlink">
+                        <div class="car-image-container">
+                            <div class="car-image-overlay car-image-edit-button"></div>
+                            <img src="../img/cars/2019-mirage-g4.jpg" alt="" class="dashboard-images-car">
+                        </div>
+                        <div class="search-details">
+                            <p class="search-details details-carname">Mitsubishi Mirage G4</p>
+                            <p class="search-details">4.4 out of 5</p>
+
+                            <div class="price-container">
+                                <label for="details-price">Price</label>
+                                <p class="details-price">₱ 19,450</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="dashboard-content-search suv">
+                    <a href="demo-carpages/innova.html" class="carlink">
+                        <div class="car-image-container">
+                            <div class="car-image-overlay car-image-edit-button"></div>
+                            <div class="car-image-overlay">
+                                <p class="text-unavailable">UNAVAILABLE</p>
+                            </div>
+                            <img src="../img/cars/2022-innova.jpg" alt="" class="dashboard-images-car">
+                        </div>
+                        <div class="search-details">
+                            <p class="search-details details-carname">Toyota Innova</p>
+                            <p class="search-details">4.6 out of 5</p>
+
+                            <div class="price-container">
+                                <label for="details-price">Price</label>
+                                <p class="details-price">₱ 32,225</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="dashboard-content-search sedan">
+                    <a href="demo-carpages/model3.html" class="carlink">
+                        <div class="car-image-container">
+                            <div class="car-image-overlay car-image-edit-button"></div>
+                            <div class="car-image-overlay">
+                                <p class="text-unavailable">UNAVAILABLE</p>
+                            </div>
+                            <img src="../img/cars/2019-tesla-model3.jpg" alt="" class="dashboard-images-car">
+                        </div>
+                        <div class="search-details">
+                            <p class="search-details details-carname">Tesla Model 3</p>
+                            <p class="search-details">4.1 out of 5</p>
+
+                            <div class="price-container">
+                                <label for="details-price">Price</label>
+                                <p class="details-price">₱ 65,484</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="dashboard-content-search suv">
+                    <a href="demo-carpages/everest.html" class="carlink">
+                        <div class="car-image-container">
+                            <div class="car-image-overlay car-image-edit-button"></div>
+                            <div class="car-image-overlay">
+                                <p class="text-unavailable">UNAVAILABLE</p>
+                            </div>
+                            <img src="../img/cars/2022-ford-everest.jpg" alt="" class="dashboard-images-car">
+                        </div>
+                        <div class="search-details">
+                            <p class="search-details details-carname">Ford Everest</p>
+                            <p class="search-details">4.3 out of 5</p>
+
+                            <div class="price-container">
+                                <label for="details-price">Price</label>
+                                <p class="details-price">₱ 52,796</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="dashboard-content-search no-searches-found">
+                    <a href="#" class="carlink">
+                        <div class="car-image-container">
+                            <div class="car-image-overlay car-image-edit-button"></div>
+                            <img src="../img/no.png" alt="" class="dashboard-images-car">
+                        </div>
+                        <div class="search-details">
+                            <p class="search-details details-carname">No Cars Found</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div> <!--search contents-->
+
+            <div class="dashboard-search-filter">
+                <h1 class="search-labels">Search Filters</h1>
+                <p class="search-labels">Price:</p>
+                <select name="sortby-price" class="searchbox-dropdown searchbox-styles" id="sortby-price">
+                    <option value="">Highest Rating</option>
+                    <option value="">Price (Highest-Lowest)</option>
+                    <option value="">Price (Lowest-Highest)</option>
+                </select>
+                <p class="search-labels">Car type:</p>
+                <select name="sortby-cartype" class="searchbox-dropdown searchbox-styles" id="sortby-cartype" onchange="filterCarType()">
+                    <option value="all">All</option>
+                    <option value="sedan">Sedan</option>
+                    <option value="hatchback">Hatchback</option>
+                    <option value="suv">SUV</option>
+                    <option value="hardtop">Hardtop</option>
+                    <option value="convertible">Convertible</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="car-logos-container">
+            <img src="../img/carlogos/toyota.png" alt="" class="car-logos">
+            <img src="../img/carlogos/mitsubishi.png" alt="" class="car-logos">
+            <img src="../img/carlogos/ford.png" alt="" class="car-logos">
+            <img src="../img/carlogos/tesla.png" alt="" class="car-logos">
+            <img src="../img/carlogos/jeep.png" alt="" class="car-logos">
+        </div>
+
+        <div class="allrights">
+            <p>&#169; Avventura Auto 2022</p>
+        </div>
+    </div>
+<script src="../scripts/search-filters.js"></script>
+<script src="../scripts/dashboard-navbar-script.js"></script>
+<script src="../scripts/select-time-population.js"></script>
+</body>
+</html>

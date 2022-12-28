@@ -28,7 +28,7 @@ function checkPassword(){
     switch(password){
         case aaGenePass:
             console.log('correct user account!');
-            window.location.href = "dashboard.html";
+            window.location.href = "demo-employeepages/dashboard.html";
             break;
         case defaultuserPass:
             console.log('correct user account!');

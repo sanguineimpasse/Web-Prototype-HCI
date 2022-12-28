@@ -1,0 +1,130 @@
+/*dashboard content*/
+.dashboard-contents-container{
+    margin-top: 4vw;
+    margin-left: 2vw;
+}
+
+div.search-contents{
+    display: block;
+    float: left;
+}
+
+div.car-image-container{
+    float: left;
+    z-index: 1;
+}
+div.car-image-overlay{
+    position: absolute;
+    float: left;
+    width: 20.1vw;
+    height: 13.1vw;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+div.car-image-edit-button{
+    cursor: pointer;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url('../icons/edit-blue.png');
+    background-position: center;
+    background-size: 6vw;
+    background-repeat: no-repeat;
+    z-index: 10;
+}
+p.text-unavailable{
+    font-family: 'Source Sans Pro Bold', sans-serif;
+    margin-top: 5.2vw;
+    color: red;
+    text-align: center;
+    font-size: 1.4rem;
+}
+img.dashboard-images-car{
+    margin-right: 2vw;
+    width: 20vw;
+    height: 13vw;
+    object-fit: cover;
+    border: 2px solid black;
+}
+
+div.search-details{
+    display: block;
+    overflow: hidden;
+} 
+
+div.price-container{
+    padding: 0.4vw 1vw 0.4vw 1vw;
+    margin-top: 2vw;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 16px;
+    max-width: 10vw;
+}
+
+p.details-price{
+    font-size: 1.9rem;
+    color: rgb(3, 187, 187);
+}
+
+.dashboard-content-search{
+    padding: 2vw;
+    display: block;
+    margin-bottom: 1vw;
+    width: 48vw;
+    height: 13vw;
+    border-radius: 16px;
+}
+
+.dashboard-content-search:hover{
+    background-color: var(--grey1lighter);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+p.details-carname{
+    font-size: 2rem;
+    font-weight: bold;
+}
+h1.search-labels{
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+p.search-labels{
+    display: block;
+    margin-top: 0.9vw;
+    margin-bottom: 0.3vw;
+}
+
+div.dashboard-search-filter{
+    height: 20vw;
+    width: 13vw;
+    padding: 2vw;
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px var(--grey2);
+    margin-left: 6vw;
+    display: block;
+    float: left;
+}
+
+div.car-logos-container{
+    margin-top: 14vw;
+    margin-left: 20vw;
+    margin-bottom: 7vw;
+    display: inline-block;
+    float: none;
+    bottom: 0;
+}
+
+.sedan, .suv, .hatchback{
+    display: block; /*test*/
+}
+
+.show{
+    display: block;
+}
+
+.no-searches-found{
+    display: none;
+}

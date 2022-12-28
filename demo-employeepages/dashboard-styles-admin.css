@@ -1,0 +1,45 @@
+.dashboard-content-overlay{
+    cursor: pointer;
+    position: absolute;
+    float: left;
+    width: 32.1vw;
+    height: 24.1vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url('../icons/edit-blue.png');
+    background-position: center;
+    background-size: 10vw;
+    background-repeat: no-repeat;
+}
+.dashboard-content-overlay-right{
+    margin-left: 45vw;
+    width: 29vw;
+}
+.dashboard-content-overlay-bottom{
+    width: 24.1vw;
+}
+p.edit-button{
+    cursor: pointer;
+    float: left;
+    color: rgb(94, 0, 17);
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+textarea.textarea-style{
+    padding-top: 6vw;
+    height: 16vw;
+    width: 40vw;
+    resize: none;
+    font-size: 1.3rem;
+}
+
+.textarea-one{
+    display: none;
+}
+.textarea-two{
+    display: none;
+}
+.textarea-three{
+    display: none;
+}
+

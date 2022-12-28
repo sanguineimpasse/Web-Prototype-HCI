@@ -104,13 +104,6 @@
 	document.getElementById('bday').addEventListener('blur', ()=>{
 		document.querySelector('.bday-label').style.display = 'none';
 	});
-
-	function handle(e){
-        if(e.keyCode === 13){
-            e.preventDefault(); // Ensure it is only this code that runs
-			checkCaptcha();
-        }
-    }
 </script>
 <script src="scripts/checkusername.js"></script>
 <script src="scripts/captcha.js"></script>

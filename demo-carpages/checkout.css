@@ -1,5 +1,9 @@
+div.dashboard-contents-container{
+    margin-top: 0;
+}
 h1.contents-title{
     font-size: 1.8rem;
+    color: var(--bluetitle);
 }
 h1.driver-info{
     text-align: center;
@@ -11,7 +15,7 @@ div.driver-info-form{
     background-color: var(--grey1);
     width: 54vw;
     height: 16vw;
-    margin-top: 2vw;
+    margin-top: 1vw;
     border: 2px solid black;
     border-radius: 32px;
 }
@@ -65,7 +69,7 @@ input.uploadbutton{
 
 .agreement-container{
     padding: 1vw;
-    margin-top: 2vw;
+    margin-top: 1vw;
     height: 3vw;
     width: 54vw;
     border: 2px solid black;
@@ -80,4 +84,174 @@ input.uploadbutton{
 }
 p.agreement-text{
     float: left;
+}
+.car-image-container{
+    width: 20%;
+}.car-image-container, .pickup-dropoff-form{
+    float: left;
+}
+img.car-image-form{
+    width: 80%;
+    float: left;
+    margin-top: 1vw;
+    margin-left: 1vw;
+    border: 2px solid black;
+}
+p.car-image-container-carinfo{
+    font-size: 0.7rem;
+    text-align: center;
+}
+div.pickup-dropoff-form-container{
+    padding: 0.5vw;
+    margin-top: 1vw;
+    background-color: var(--grey1);
+    height: 8.5vw;
+    width: 54vw;
+    border: 2px solid black;
+    border-radius: 16px;
+}div.pickup-dropoff-form{
+    margin-top: 0.2vw;
+    padding: 1vw;
+    background-color: var(--grey1);
+    border: 2px solid black;
+    border-radius: 16px;
+    height: 5.8vw;
+    width: 73%;
+}
+p.pickup-dropoff-text{
+    color: var(--bluetitle);
+    font-weight: bold;
+    margin-bottom: 0.4vw;
+}
+.pickup-form, .dropoff-form{
+    float: left;
+    width: 17vw;
+    margin-right: 1.2vw;
+}
+.pickup-dropoff-inputboxes{
+    margin-top: 0.2vw;
+    width: 16vw;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.left-side-column, .charges-summary-container{
+    float: left;
+}
+div.price-info-container{
+    height: 30vw;
+    float: left;
+}
+div.charges-summary-container{
+    padding: 1vw;
+    margin-top: 1vw;
+    margin-left: 2vw;
+    height: 19vw;
+    width: 21vw;
+    background-color: var(--grey1);
+    border: 2px solid black;
+    border-radius: 32px;
+    margin-bottom: 1vw;
+}
+.charges-summmary-title{
+    color: var(--bluetitle);
+    font-size: 1.5rem;
+    text-align: center;
+}
+p.charges-summary-text{
+    margin-top: 2vw;
+    margin-left: 3vw;
+}
+hr{
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    border-top: 2px solid black;
+}
+h1.total-cost{
+    text-align: center;
+    font-size: 1.3rem;
+}
+.charges-summary-buttons-container{
+    height: 20vw;
+    width: 20vw;
+    margin-left: 5vw;
+}
+button.charges-summary-buttons{
+    cursor: pointer;
+    float: left;
+    width: 8vw;
+    height: 3vw;
+    margin-right: 0.5vw;
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 4px 4px 1px black;
+    color: white;
+    font-weight: bold;
+}
+.next-button{
+    background-color: var(--buttongreen); 
+}
+.next-button:hover{
+    background-color: var(--buttongreenactive);
+}
+.cancel-button{
+    background-color: var(--buttonred);
+}
+.cancel-button:hover{
+    background-color: var(--buttonredactive);
+}
+
+button.booknow-button{
+    cursor: pointer;
+    margin-left: 2vw;
+    display: none;
+    width: 12vw;
+    height: 4vw;
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 4px 4px 1px black;
+    background-color: var(--buttongreen);
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+button.booknow-button:hover{
+    background-color: var(--buttongreenactive);
+}
+h1.important-infomation-warning{
+    font-size: 2rem;
+    color: var(--buttonred);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.255);
+}
+div.important-information-container{
+    display: none;
+    margin-top: 1vw;
+    padding: 1.5vw;
+    float: left;
+    width: 56vw;
+    height: 30vw;
+    border: 2px solid black;
+}
+p.terms-text{
+    font-size: 1rem;
+}
+div.scrollable-information{
+    margin-top: 1.2vw;
+    overflow-y: scroll;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    height: 20vw;
+    width: 57vw;
+}
+.check-agree-terms{
+    margin-top: 1vw;
+}
+br.accept-terms-br{
+    display: block;
+}
+p.accept-terms-warning{
+    display: none;
+    font-size: 0.8rem;
+    color: red;
 }

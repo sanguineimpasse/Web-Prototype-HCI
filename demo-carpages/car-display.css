@@ -10,8 +10,10 @@ div.information-container-top{
 
 img.car-image{
     float: left;
-    width: 30vw;
+    height: 18vw;
+    width: 29vw;
     border: 2px solid black;
+    object-fit: cover;
 }
 
 div.car-details{
@@ -59,7 +61,6 @@ div.userinfo{
 }
 
 div.reviews{
-    height: 20vw;
     width: 70vw;
     border: 2px solid black;
     padding: 2vw;

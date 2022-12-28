@@ -1,6 +1,7 @@
 :root{
     --blue1: #1e2634;
     --blue2: #367bf1;
+    --bluetitle: #001b49;
     --blue2active: #204d9a;
     --grey1: rgb(225, 225, 225);
     --grey1lighter: rgb(241, 241, 241);
@@ -8,6 +9,8 @@
     --grey2: rgb(57, 57, 57);
     --buttongreen: rgb(60, 199, 141);
     --buttongreenactive: rgb(35, 128, 90);
+    --buttonred: rgb(217, 44, 44);
+    --buttonredactive: rgb(106, 18, 18);
 }
 
 *{

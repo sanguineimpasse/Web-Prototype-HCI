@@ -1,0 +1,19 @@
+*{ 
+    font-family: 'Source Sans Pro Regular', sans-serif;
+    text-align: center;
+}
+
+h1{
+    font-family: 'Source Sans Pro Bold';
+}
+
+.main-container{
+    margin-top: 10vw;
+    margin-left: 0vw;
+}
+
+img.loading{
+    width: 10vw;
+    height: 15vw;
+    object-fit: cover;
+}

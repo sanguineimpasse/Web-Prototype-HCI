@@ -13,7 +13,20 @@ div.car-image-container{
     float: left;
     z-index: 1;
 }
-
+div.car-image-overlay{
+    position: absolute;
+    float: left;
+    width: 20.1vw;
+    height: 13.1vw;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+p.text-unavailable{
+    font-family: 'Source Sans Pro Bold', sans-serif;
+    margin-top: 5.2vw;
+    color: red;
+    text-align: center;
+    font-size: 1.4rem;
+}
 img.dashboard-images-car{
     margin-right: 2vw;
     width: 20vw;

@@ -41,12 +41,19 @@ function checkCaptcha(){
     }
     else if(captchaValue !== userInputCaptcha){
         console.log('THE USER DID NOT PASS THE VIBE CHECK');
-        alert('kabongo mo ulitin mo captcha');
+        alert('Please redo the captcha.');
         generateCaptcha();
         setCaptcha();
     }
 }
 
+function handle(enterKey){
+        console.log('enter key pressed!');
+        if(enterKey.keyCode === 13){
+            enterKey.preventDefault(); // Ensure it is only this code that runs
+			checkCaptcha();
+        }
+    }
 
 /* 
 //OLD METHOD
